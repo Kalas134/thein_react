@@ -6,11 +6,13 @@ import Header from './semantic/Header.jsx'
 import Footer from './semantic/Footer.jsx'
 import Garage from './semantic/Garage.jsx'
 import BasicCap from './semantic/BasicCap.jsx'
+import Chapter08 from './semantic/Chapter08.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Header/>
+    <Chapter08/>
     <BasicCap/>
     <Garage/>
     <Footer/>
