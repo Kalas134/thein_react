@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 function MyForm() {
 
@@ -13,13 +13,25 @@ function MyForm() {
             event.target.value});
     }
 
-    const handleSubmit
+    const handleSubmit = (event) => {
+        alert('Hello $(user.firstName) $(user.lastName)');
+        event.preventDefault();
+    }
 
     return (
-        <div>
-            
-        </div>
+        <form onSubmit={handleSubmit}>
+            <label>Frist name</label>
+            <input type="text" name="fristName" onChange={handleChange}
+            value={user.firstName}/><br/>
+            <label>Last name</label>
+            <input type="text" name="lastName" onChange={handleChange}
+            value={user.lastName}/><br/>
+            <label>Email</label>
+            <input type="text" name="email" onChange={handleChange}
+            value={user.email}/><br/>
+            <input type="submit" value="Submit"/>
+        </form>
     );
-}
+};
 
 export default MyForm;
