@@ -11,6 +11,11 @@ import Footer from './semantic/Footer'
 import MyReducer from './semantic/MyReducer'
 import MyWithOutCallback from './semantic/MyWithOutCallback'
 import MyCallback from './semantic/MyCallback'
+import MyUnmemo from './semantic/MyUnmemo'
+import MyMemo from './semantic/MyMemo'
+// import MyJSONPlaceHolder from './semantic/MyJSONPlaceHolder'
+import MyCustomHooks from './semantic/MyCustomHooks'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -132,6 +137,10 @@ function App() {
       <MyReducer/>
       {/* <MyWithOutCallback/> */}
       <MyCallback/>
+      {/* <MyUnmemo/> */}
+      <MyMemo/>
+      {/* <MyJSONPlaceHolder/> */}
+      <MyCustomHooks/>
       <Footer/>
     </>
   )

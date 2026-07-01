@@ -4,7 +4,7 @@ const Button = React.memo(({ onClick, text }) => {
     alert(`Child ${text} button rendered`);
     return <button onClick={onClick}>{text}</button>;
 });
-
+// UN(없는) uesCallback: 매번 렌더링 마다 새로 렌더링 생성
 function MyWithOutCallback() {
     const [count1, setCount1] = useState(0);
     const [count2, setCount2] = useState(0);

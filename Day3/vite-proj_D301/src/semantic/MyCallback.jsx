@@ -4,8 +4,8 @@ const Button = React.memo(({ onClick, text }) => {
     console.log(`${text} button rendered`);
     return <button onClick={onClick}>{text}</button>;
 });
-
-function MyCallback(props) {
+// uesCallback: 함수 재사용
+function MyCallback() {
     const [count1, setCount1] = useState(0);
     const [count2, setCount2] = useState(0);
 
@@ -15,6 +15,7 @@ function MyCallback(props) {
     const handleClick2 = useCallback(() => {
         setCount2(count2 + 1);
     }, [count2]);
+
     console.log("Parent rendered");
     return (
         <div>
